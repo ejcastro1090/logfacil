@@ -28,11 +28,7 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller LogFacil.spec
-
-    - name: Rename executable for safety (Optional, handled by Pyinstaller Spec)
-      run: |
-        echo "Build completed!"
+        pyinstaller --onefile --noconsole --name LogFacil logfacil.py
         
     - name: Create Release
       uses: softprops/action-gh-release@v2
