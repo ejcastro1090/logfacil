@@ -35,4 +35,3 @@ jobs:
         with:
           artifacts: "dist/*.exe"
           tag: ${{ github.ref_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
