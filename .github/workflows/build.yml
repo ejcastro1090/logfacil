@@ -1,0 +1,33 @@
+name: Build LogFacil
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          pip install pyinstaller
+          pip install ttkbootstrap
+
+      - name: Gerar executável
+        run: |
+          pyinstaller --onefile --noconsole logfacil.py
+
+      - name: Criar Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/logfacil.exe
