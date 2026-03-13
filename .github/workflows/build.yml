@@ -1,20 +1,19 @@
 name: Build LogFacil
 
-permissions:
-  contents: write
-  actions: read
-
 on:
   push:
     tags:
       - "v*"
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      - name: Baixar código
+      - name: Checkout do código
         uses: actions/checkout@v4
 
       - name: Instalar Python
@@ -32,6 +31,8 @@ jobs:
           pyinstaller --onefile --noconsole logfacil.py
 
       - name: Criar Release
-        uses: softprops/action-gh-release@v2
+        uses: ncipollo/release-action@v1
         with:
-          files: dist/logfacil.exe
+          artifacts: "dist/*.exe"
+          tag: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
