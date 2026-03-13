@@ -2,6 +2,7 @@ name: Build LogFacil
 
 permissions:
   contents: write
+  actions: read
 
 on:
   push:
