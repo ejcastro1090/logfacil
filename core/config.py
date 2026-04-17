@@ -11,7 +11,7 @@ necessárias para a aplicação. Dentre as principais configurações estão:
 import os
 
 # ============================== CONFIGURAÇÃO DO GITHUB ==============================
-GITHUB_REPO = "ejcastro1090/LogFacil"
+GITHUB_REPO = "maxinnov-tech/logfacil"
 GITHUB_BRANCH = "main"
 CURRENT_VERSION = "2.1.1"  # Versão oficial LogFácil Pro
 VERSION = CURRENT_VERSION

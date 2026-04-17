@@ -4,7 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://python.org)
 [![Frontend](https://img.shields.io/badge/frontend-Vue.js-green)](https://vuejs.org)
 [![Backend](https://img.shields.io/badge/backend-FastAPI-red)](https://fastapi.tiangolo.com)
-[![Download EXE](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/ejcastro1090/logfacil/releases/latest)
+[![Download EXE](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/maxinnov-tech/logfacil/releases/latest)
 
 # 📌 LogFacil
 
@@ -88,7 +88,7 @@ O LogFacil foi projetado para:
 
 Para utilizar o sistema sem necessidade de instalação de dependências:
 
-👉 https://github.com/ejcastro1090/logfacil/releases/latest
+👉 https://github.com/maxinnov-tech/logfacil/releases/latest
 
 ---
 
